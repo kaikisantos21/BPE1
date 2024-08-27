@@ -1,34 +1,34 @@
-package prjCaneta;
-
-import java.util.Scanner;
+package prj_zoologico;
 
 public class Aplicacao {
 
 	public static void main(String[] args) {
+		ClasseAnimal elefante = new ClasseAnimal();
+		elefante.atributoNome = "Dumbo";
+		elefante.atributoRaca = "Africano";
+		elefante.atributoSexo = "macho";
+		elefante.atributoPeso = 170;
 		
-		Scanner sc = new Scanner(System.in)
+		ClasseAnimal girafa = new ClasseAnimal("GitHub","Russa","Femea",50);
 		
-		Caneta caneta01 = new Caneta();
-		caneta01.modelo = "BIC";
-		caneta01.cor = "Azul";
-		caneta01.ponta = 0.5;
-		caneta01.tampada = false;
+		SubiclasseCarnivoros leao = new SubiclasseCarnivoros();
+		leao.atributoNome = "Leaodro";
+		leao.atributoRaca = "Australeandro";
+		leao.atributoSexo = "Neutro";
+		leao.atributoPeso = 123;
 		
-		Caneta caneta02 = new Caneta();
-		canete02.modelo = "feber";
-		caneta02.cor = "verde";
-		caneta02.ponta = 1.0;
-		caneta02.tampada  = true
-				
-		System.out.println("qual a carga da caneta 01?");
-		caneta01.carga = sc.nextInt();
+		leao.exibirInfo();
+		leao.metodoCacar();
 		
-		System.out.println("Qual a carga da caneta 02");
-		caneta02.carga = sc.nextlnt();
+		elefante.exibirinfo();
 		
-		caneta.status();
-		caneta.status();
-				
+		elefante.metodoComer();
+		
+		elefante.exibirinfo();
+		
+		girafa.exibirinfo();
+		
+		
 				
 		
 	}

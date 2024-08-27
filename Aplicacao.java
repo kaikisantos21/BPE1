@@ -1,36 +1,15 @@
-package prj_zoologico;
+package prjPokemon;
 
 public class Aplicacao {
 
 	public static void main(String[] args) {
-		ClasseAnimal elefante = new ClasseAnimal();
-		elefante.atributoNome = "Dumbo";
-		elefante.atributoRaca = "Africano";
-		elefante.atributoSexo = "macho";
-		elefante.atributoPeso = 170;
-		
-		ClasseAnimal girafa = new ClasseAnimal("GitHub","Russa","Femea",50);
-		
-		SubiclasseCarnivoros leao = new SubiclasseCarnivoros();
-		leao.atributoNome = "Leaodro";
-		leao.atributoRaca = "Australeandro";
-		leao.atributoSexo = "Neutro";
-		leao.atributoPeso = 123;
-		
-		leao.exibirInfo();
-		leao.metodoCacar();
-		
-		elefante.exibirinfo();
-		
-		elefante.metodoComer();
-		
-		elefante.exibirinfo();
-		
-		girafa.exibirinfo();
-		
-		
-				
-		
+	pokemon pikachu = new pokemon();
+	pikachu.atributoNome = new "pikachu";
+	pikachu.atributoTipos = "eletrico";
+	pikachu.atributoNivel = 2;
+	pikachu.atributoHp =  20;
+	
+
 	}
 
 }
